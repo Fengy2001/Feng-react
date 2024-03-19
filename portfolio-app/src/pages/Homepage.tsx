@@ -1,13 +1,16 @@
 import './Homepage.css';
+import Navbar from '../components/navbar';
 
 export default function Homepage(){
   return (
     <div className="Homepage">
-      <header className="header">Welcome</header>
-      <section className="featureSection">
-        <p>Highlight the key features of your product here.</p>
-      </section>
-      <footer className="footer">© 2024 Your Company Name</footer>
+      <header className="header">
+        <Navbar className="navbar" buttons={["About Me","Projects","Resume","Contact Me"]}/>
+      </header>
+        <section className="featureSection">
+          <div className="welcomeMsg">Welcome</div>
+        </section>
+      <footer className="footer"></footer>
     </div>
   );
 }

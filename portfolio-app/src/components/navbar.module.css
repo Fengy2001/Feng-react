@@ -1,0 +1,99 @@
+.className {
+    background-color: #292929;
+    border: 0;
+    margin: 0;
+    color: white;
+    min-height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+    position: fixed;
+    font-size: 2rem;
+    height: 75px;
+}
+
+.dropdown{
+    visibility: hidden;
+    display: none;
+}
+  
+.button-0 {
+background-color: #292929;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
+}
+
+.button-1 {
+background-color: #292929;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
+}
+
+.button-2 {
+background-color: #292929;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
+}
+
+.button-3 {
+background-color: #292929;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
+}
+
+
+
+@media (max-width: 928px) {
+    .className{
+        visibility: hidden;
+    }
+
+    .dropdown{
+        visibility:visible;
+        display: contents;
+        display: flex;
+        position: fixed;
+        top: 2%;
+        left: 2%;
+        background-color: blue;
+    }
+
+    .className {
+        /* Adjust styles for smaller screens */
+        width: 100%; /* Full width */
+        left: 0; /* Centered */
+        justify-content: center; /* Centered horizontally */
+    }
+
+    .button-0 {
+        visibility: hidden;
+        display: none;
+    }
+    .button-1 {
+        visibility: hidden;
+        display: none;
+    }
+    .button-2 {
+        visibility: hidden;
+        display: none;
+    }
+    .button-3 {
+        visibility: hidden;
+        display: none;
+    }
+}
