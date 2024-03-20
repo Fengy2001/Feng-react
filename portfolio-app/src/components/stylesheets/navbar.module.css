@@ -15,7 +15,7 @@
     height: 75px;
 }
 
-.dropdown{
+.menu{
     visibility: hidden;
     display: none;
 }
@@ -63,21 +63,13 @@ align-items: center;
         visibility: hidden;
     }
 
-    .dropdown{
+    .menu{
         visibility:visible;
         display: contents;
         display: flex;
         position: fixed;
         top: 2%;
         left: 2%;
-        background-color: blue;
-    }
-
-    .className {
-        /* Adjust styles for smaller screens */
-        width: 100%; /* Full width */
-        left: 0; /* Centered */
-        justify-content: center; /* Centered horizontally */
     }
 
     .button-0 {
