@@ -10,7 +10,7 @@ const Navbar = ({className,buttons}:Props) => {
     return(
         <div>
             <div className={styles.menu}>
-                <Menu/>
+                <Menu buttons={buttons}/>
             </div>
         <nav className={`${styles.className} ${className}`}>
             {buttons.map((button,index)=> (

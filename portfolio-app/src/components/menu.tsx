@@ -1,7 +1,11 @@
 import './stylesheets/menu.css'
 import { useState } from "react";
 
-const Menu = () => {
+interface Props {
+    buttons: string[];
+}
+
+const Menu = ({buttons}:Props) => {
     const [isMenuOn, setIsMenuOn] = useState<boolean>(false);
 
     function menuSelected() {
@@ -9,16 +13,23 @@ const Menu = () => {
         console.log("Menu Clicked!");
     }
 
-    function test(){
-        console.log("test");
-    }
-
     return(
-        <div className={`menu`} onClick={menuSelected}>
+        <div>
+            <div className={`menu ${isMenuOn ? 'menuOn' : 'menuOff'}`} onClick={menuSelected}>
             <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
             <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
             <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
         </div>
+        <div className = {`sideNav ${isMenuOn ? 'sideNavOn' : 'sideNavOff'}`}>
+            {isMenuOn && (
+                    buttons.map((button, index) => (
+                        <ul className={`button-${index}`} key={index.toString()}>{button}</ul>
+                    ))
+                )
+            }
+            </div>
+        </div>
+        
     )
 }
 

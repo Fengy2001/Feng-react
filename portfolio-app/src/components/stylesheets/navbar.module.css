@@ -2,6 +2,7 @@
     background-color: #292929;
     border: 0;
     margin: 0;
+    padding: 0;
     color: white;
     min-height: 5vh;
     justify-content: space-between;
@@ -12,7 +13,7 @@
     width: 80%;
     position: fixed;
     font-size: 2rem;
-    height: 75px;
+    height: 10vh;
 }
 
 .menu{
@@ -61,10 +62,13 @@ align-items: center;
 @media (max-width: 928px) {
     .className{
         visibility: hidden;
+        border: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .menu{
-        visibility:visible;
+        visibility: visible;
         display: contents;
         display: flex;
         position: fixed;

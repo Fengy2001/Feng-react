@@ -1,8 +1,9 @@
 .Homepage {
   background-color: #292929;
   color: white;
-  margin: 0;
   border: 0;
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,12 @@ ul {
 }
 
 @media (max-width: 928px) {
+  .Homepage{
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
   .welcomeMsg {
     font-size: 6rem;
   }
