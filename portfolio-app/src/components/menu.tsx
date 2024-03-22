@@ -21,12 +21,14 @@ const Menu = ({buttons}:Props) => {
             <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
         </div>
         <div className = {`sideNav ${isMenuOn ? 'sideNavOn' : 'sideNavOff'}`}>
+            <div className="buttons">
             {isMenuOn && (
                     buttons.map((button, index) => (
                         <ul className={`button-${index}`} key={index.toString()}>{button}</ul>
                     ))
                 )
             }
+            </div>
             </div>
         </div>
         

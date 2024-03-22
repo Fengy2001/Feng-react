@@ -18,7 +18,7 @@
 
 .menuOn{
     top: 5%;
-    transform: translateX(calc(70vw - 120px));
+    transform: translateX(calc(70vw - 20vw));
     transition: transform 1.25s ease;
 }
 
@@ -83,8 +83,53 @@
     transform-origin: left;
     top: 0vh;
     height: 100vh;
-    width: calc(70vw - 40px);
+    width: calc(70vw - 10vw);
     left: 10%;
     background-color: black;
     transition: height 1s ease, width 1s ease, left 1s ease, background-color 1.5s ease;
+}
+
+.buttons {
+    transform: translateY(10vh);
+    display: flexbox;
+}
+
+.button-0 {
+    font-size: 4vh;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    border-radius: 10px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-1 {
+    font-size: 4vh;
+background-color: transparent;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
+}
+
+.button-2 {
+    font-size: 4vh;
+background-color: transparent;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
+}
+
+.button-3 {
+    font-size: 4vh;
+background-color: transparent;
+display: flex;
+position: relative;
+border-radius: 10px 10px;
+justify-content: center;
+align-items: center;
 }

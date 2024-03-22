@@ -59,7 +59,7 @@ align-items: center;
 
 
 
-@media (max-width: 928px) {
+@media screen and (max-width: 928px) {
     .className{
         visibility: hidden;
         border: 0;
