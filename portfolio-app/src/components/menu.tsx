@@ -24,7 +24,7 @@ const Menu = ({buttons}:Props) => {
             <div className="buttons">
             {isMenuOn && (
                     buttons.map((button, index) => (
-                        <ul className={`button-${index}`} key={index.toString()}>{button}</ul>
+                        <ul className={`button-${index}${isMenuOn ? 'On' : 'Off'}`} key={index.toString()}>{button}</ul>
                     ))
                 )
             }

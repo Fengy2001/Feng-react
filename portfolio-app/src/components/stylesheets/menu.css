@@ -18,7 +18,7 @@
 
 .menuOn{
     top: 5%;
-    transform: translateX(calc(70vw - 20vw));
+    transform: translateX(calc(70vw - 25vw)); /* This works until 420px */
     transition: transform 1.25s ease;
 }
 
@@ -94,42 +94,19 @@
     display: flexbox;
 }
 
-.button-0 {
+.button-0On, .button-1On, .button-2On, .button-3On {
     font-size: 4vh;
     background-color: transparent;
     display: flex;
     position: relative;
-    border-radius: 10px 10px;
     justify-content: center;
     align-items: center;
+    transition: left 1s ease, visibility 1.5s ease;
 }
 
-.button-1 {
-    font-size: 4vh;
-background-color: transparent;
-display: flex;
-position: relative;
-border-radius: 10px 10px;
-justify-content: center;
-align-items: center;
-}
-
-.button-2 {
-    font-size: 4vh;
-background-color: transparent;
-display: flex;
-position: relative;
-border-radius: 10px 10px;
-justify-content: center;
-align-items: center;
-}
-
-.button-3 {
-    font-size: 4vh;
-background-color: transparent;
-display: flex;
-position: relative;
-border-radius: 10px 10px;
-justify-content: center;
-align-items: center;
+.button-0Off, .button-1Off, .button-2Off, .button-3Off {
+    visibility: hidden;
+    display: none;
+    left: -10vw;
+    transition: right 1s ease, visibility 1.5s ease;
 }
