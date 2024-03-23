@@ -1,0 +1,112 @@
+.menu {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: fixed;
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    top: 5%;
+    left: 5%;
+    transition: transform 1.25s ease;
+}
+
+.menuOn{
+    top: 5%;
+    transform: translateX(calc(70vw - 25vw)); /* This works until 420px */
+    transition: transform 1.25s ease;
+}
+
+.line {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 5px;
+    transform-origin: center;
+    transition: transform 1.25s ease, background-color 0.5s ease;
+}
+
+.lineOn:nth-child(1){
+    transform: rotate(45deg);
+    position: absolute;
+    top: 12.5px
+}
+
+.lineOn:nth-child(2) {
+    background-color: transparent;
+    top: 12.5px
+}
+
+.lineOn:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 12.5px
+}
+
+.lineOff:nth-child(1), .lineOff:nth-child(3){
+    transform: translateY(0) rotate(0deg);
+}
+
+.lineOff:nth-child(2) {
+    background-color: white;
+    width: 100%;
+}
+
+.sideNav {
+    top: 0vh;
+    height: 100vh;
+    width: 100%;
+    left: 10%;
+    background-color: gray;
+}
+
+.sideNavOff {
+    transform-origin: top left;
+    top: 0vh;
+    height: 100vh;
+    width: 0;
+    left: 0;
+    background-color: gray;
+    transition: height 1s ease, width 1s ease, left 1s ease, background-color 1.5s ease;
+}
+
+.sideNavOn {
+    transform-origin: left;
+    top: 0vh;
+    height: 100vh;
+    width: calc(70vw - 10vw);
+    left: 10%;
+    background-color: black;
+    transition: height 1s ease, width 1s ease, left 1s ease, background-color 1.5s ease;
+}
+
+.buttons {
+    transform: translateY(10vh);
+    display: flexbox;
+}
+
+.button-0On, .button-1On, .button-2On, .button-3On {
+    font-size: 4vh;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: left 1s ease, visibility 1.5s ease;
+}
+
+.button-0Off, .button-1Off, .button-2Off, .button-3Off {
+    visibility: hidden;
+    display: none;
+    left: -10vw;
+    transition: right 1s ease, visibility 1.5s ease;
+}
