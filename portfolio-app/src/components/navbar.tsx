@@ -1,7 +1,7 @@
 import styles from './stylesheets/navbar.module.css';
 import Menu from './menu'
 
-/**
+/*
  * Navbar deals with the top and side navs such that it is a reactive experience for any window size.
  */
 interface Props {

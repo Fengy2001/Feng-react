@@ -1,6 +1,9 @@
 import './stylesheets/menu.css'
 import { useState } from "react";
 
+/*
+* The hamburger menu used for lower width screens.
+*/
 interface Props {
     buttons: string[];
 }
