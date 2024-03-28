@@ -1,6 +1,9 @@
 import './Homepage.css';
 import Navbar from '../components/navbar';
 
+/*
+* Homepage where all the divs are sorted for the main screen.
+*/
 export default function Homepage(){
   return (
     <div className="Homepage">
