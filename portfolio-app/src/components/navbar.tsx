@@ -17,11 +17,15 @@ const Navbar = ({className,buttons}:Props) => {
             </div>
         <nav className={`${styles.className} ${className}`}>
             {buttons.map((button,index)=> (
-                <ul className={`${styles[`button-${index}`]}`} key={`${index}`}>{button}</ul>
+                <ul className={`${styles[`button-${index}`]}`} key={`${index}`} onClick={()=>navFunctions(index,buttons)}>{button}</ul>
             ))}
         </nav>
         </div>
     )
+}
+
+export function navFunctions(index: number, buttons: string[]) {
+    console.log(buttons[index])
 }
 
 export default Navbar;

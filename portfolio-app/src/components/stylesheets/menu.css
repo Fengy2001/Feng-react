@@ -21,7 +21,7 @@
 
 .menuOn{
     top: 5%;
-    transform: translateX(calc(70vw - 25vw)); /* This works until 420px */
+    transform: translateX(calc(70vw - 25vw));
     transition: transform 1.25s ease;
 }
 
@@ -95,6 +95,11 @@
 .buttons {
     transform: translateY(10vh);
     display: flexbox;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .button-0On, .button-1On, .button-2On, .button-3On {
