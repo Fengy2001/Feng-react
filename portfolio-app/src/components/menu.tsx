@@ -20,19 +20,19 @@ const Menu = ({buttons}:Props) => {
     return(
         <div>
             <div className={`menu ${isMenuOn ? 'menuOn' : 'menuOff'}`} onClick={menuSelected}>
-            <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
-            <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
-            <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
-        </div>
-        <div className = {`sideNav ${isMenuOn ? 'sideNavOn' : 'sideNavOff'}`}>
-            <div className="buttons">
-            {isMenuOn && (
-                    buttons.map((button, index) => (
-                        <ul className={`button-${index}${isMenuOn ? 'On' : 'Off'}`} key={index.toString()} onClick={()=>navFunctions(index,buttons)}>{button}</ul>
-                    ))
-                )
-            }
+                <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
+                <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
+                <span className={`line ${isMenuOn ? 'lineOn' : 'lineOff'}`}></span>
             </div>
+            <div className = {`sideNav ${isMenuOn ? 'sideNavOn' : 'sideNavOff'}`}>
+                <div className="buttons">
+                {isMenuOn && (
+                        buttons.map((button, index) => (
+                            <ul className={`button-${index}${isMenuOn ? 'On' : 'Off'}`} key={index.toString()} onClick={()=>navFunctions(index,buttons)}>{button}</ul>
+                        ))
+                    )
+                }
+                </div>
             </div>
         </div>
         
